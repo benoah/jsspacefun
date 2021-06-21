@@ -1,0 +1,201 @@
+/*--------------------------------------------------------------
+## About container
+--------------------------------------------------------------*/
+
+.aboutgrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  outline: 1rem solid #fff;
+  outline-offset: -1rem;
+  height: 100vh;
+  white-space: pre-wrap;
+}
+
+h1 {
+  animation: text-shadow 1.5s ease-in-out infinite;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 2;
+  color: white;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    animation: text-shadow 1.5s ease-in-out infinite;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2;
+    color: white;
+    margin-left: 5%;
+  }
+}
+
+/*--------------------------------------------------------------
+## tabel 
+--------------------------------------------------------------*/
+.tableStyle {
+  display: flex;
+  justify-content: space-around;
+}
+table {
+  background: #91a0f2;
+  border-radius: 0.35em;
+  border-collapse: collapse;
+  margin: 1em;
+  width: 100%;
+}
+
+th {
+  border-bottom: 1px solid #364043;
+
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+td {
+  color: #fff;
+  font-weight: 400;
+  padding: 0.65em 1em;
+}
+
+tbody tr:hover {
+  box-shadow: 0 0 22px 22px white;
+}
+/*--------------------------------------------------------------
+## tabel in the mediaquery i have been using codes directely from https://css-tricks.com/responsive-data-tables/
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /*
+	Label the data
+	*/
+  td:nth-of-type(1):before {
+    content: "";
+  }
+  td:nth-of-type(2):before {
+    content: "FOUNDED";
+  }
+  td:nth-of-type(3):before {
+    content: "Vehicles";
+  }
+  td:nth-of-type(4):before {
+    content: "Founder";
+  }
+  td:nth-of-type(5):before {
+    content: "Employees";
+  }
+}
+
+/*--------------------------------------------------------------
+##  VideoContent 
+--------------------------------------------------------------*/
+
+.VideoContent {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.center {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .VideoContent {
+    flex-direction: column;
+    outline: 1px solid #fff;
+    outline-offset: -1px;
+  }
+  .vidone {
+    margin-top: 2em;
+    width: 375px;
+    max-width: 812;
+  }
+
+  .vidtwo {
+    margin-top: 2em;
+    width: 375px;
+  }
+}
+/*--------------------------------------------------------------
+##  Adress and stuff like that 
+--------------------------------------------------------------*/
+
+.componentmap {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+iframe {
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+.contentMap {
+  grid-column-start: 7;
+  color: #222222;
+  font-weight: 700;
+  line-height: 3;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  .componentmap {
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid #fff;
+    outline-offset: -1px;
+  }
+}
+/*--------------------------------------------------------------
+##  Footer 
+--------------------------------------------------------------*/
