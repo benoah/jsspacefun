@@ -1,0 +1,9 @@
+Reference and inspiration 
+
+https://dribbble.com/shots/10975362/attachments/2582471?mode=media
+https://freefrontend.com/css-social-media-icons/
+https://www.w3schools.com/howto/howto_css_timeline.asp
+https://freefrontend.com/css-timelines/
+https://codepen.io/slcr/pen/vjxKxO
+https://css-tricks.com/snippets/css/centering-a-website/
+https://scrimba.com/p/pWqLHa/cBq3PsP

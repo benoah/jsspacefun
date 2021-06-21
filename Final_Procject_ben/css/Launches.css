@@ -1,0 +1,117 @@
+/*--------------------------------------------------------------
+## Inspiration is from https://codepen.io/alanhouser/pen/aErrQJ but it have been done a lot of changes
+
+and it have been inspiration for both of my launches pages
+--------------------------------------------------------------*/
+
+.holder {
+  background-image: url(../img/spacex-6.png);
+  font-size: 16px;
+  color: white;
+}
+
+.livelaunches {
+  background-image: url(../img/spacex-6.png);
+  font-size: 16px;
+  color: white;
+}
+
+p {
+  font-weight: 400;
+  font-family: "robota", sans-serif;
+}
+
+
+
+#timeline-content {
+  padding: 8px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.timeline {
+  border-left: 4px solid #2947F2;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "helvetica neu", sans-serif;
+  margin: 50px auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  max-width: 30%;
+}
+
+.timeline h2, .timeline h3 {
+  font-family: "robota", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+.timeline .event {
+  border-bottom: 1px dashed #BF625A;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline .event:before, .timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .event:before {
+  left: -217.5px;
+  color: #BF625A;
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+}
+
+.timeline .event:after {
+  box-shadow: 0 0 0 4px #2947F2;
+  left: -57.85px;
+  background: #313534;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid var(--primary-colour);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
